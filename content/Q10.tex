@@ -1,3 +1,47 @@
 \chapter{Q10}
 \emph{Q10: What are the benefits of data aggregation? What are the challenges
 of data aggregation in sensor networks?}
+
+\section{Data-aggregation}
+
+\subsection{Pros}
+
+Energy and memory efficient
+
+Reduce traffic load
+
+Network congestion
+
+Scalable to arge numbers of sinks and motes
+
+Sending is expensive - computation is cheep
+
+-To send 1kB 100 m uses the same energy as doing 3 million calculations.
+
+Save energy and increase network lifetime
+
+\subsection{Trade offs}
+
+Accuracy 
+
+Making robust estimations
+
+single outlier reading can damage MAX/MIN aggregates
+
+\subsection{Algorithms}
+Optimal Data Aggregation is NP-Hard
+
+Sub-optimal Algorithms:
+\begin{description}
+	\item{Opportunistic} Just aggregate when possible
+	\item{Center at Nearest Source (CNS)} The nearest source acts as the
+		aggregation point
+	\item{Shortest Paths Tree (SPT)} Sources send using shortest path if able
+		to aggregate
+	\item{Greedy Incremental Tree (GIT)} Recursively select the closest source
+		to the tree
+	\item{Clustered Diffusion with Dynamic Data Aggregation} Hybrid between
+		diffusion and clustering with the ability to aggregate data at the
+		cluster heads
+\end{description}
+
