@@ -1,3 +1,36 @@
 \chapter{Q09}
 \emph{Q9: Explain how directed diffusion works? What is the difference between
 directed diffusion and SPIN?}
+
+\section{SPIN}
+\emph{Sensor Protocol for Information via Negotiation}
+
+\subsection{ADV – data advertisement}
+Node that has data to share can advertise this by transmitting an ADV with
+meta-data attached
+
+\subsection{REQ – request for data}
+Node sends a request when it wishes to receive some actual data
+
+\subsection{DATA – data message}
+
+\begin{description}
+	\item Contains actual sensor data with a meta-data header
+	\item Usually much bigger than ADV or REQ messages
+\end{description}
+
+
+\section{Directed Diffusion}
+\begin{description}
+	\item Naming Scheme
+	\item Interests
+	\item Gradients
+	\item Reinforcement
+\end{description}
+
+\section{Comparation}
+
+\begin{description}
+	\item SPIN is push
+	\item Directed Diffusion is pull
+\end{description}
