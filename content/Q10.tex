@@ -3,29 +3,49 @@
 of data aggregation in sensor networks?}
 
 \section{Data-aggregation}
+Save energy and increase network lifetime by combining multiple sensor data.
+\\
+Take advantage of the routing hierarchy and high network density.
+
+\subsection{Data Storage Representations}
+Store individual data
+\\
+Store only mean and variance
+
+\subsection{Aggregation Functions}
+Average, max, min, median.
+Suppression of duplicates.
+\\
+Exploit spatial and temporal correlation.
+
+\subsection{Challenges}
+Find the optimal number of aggregation points
+\\
+Selection of aggregation points
+\\
+Dynamic change of aggregation points (energy efficiency
 
 \subsection{Pros}
-
 Energy and memory efficient
-
+\\
 Reduce traffic load
-
+\\
 Network congestion
-
+\\
 Scalable to arge numbers of sinks and motes
-
+\\
 Sending is expensive - computation is cheep
-
+\\
 -To send 1kB 100 m uses the same energy as doing 3 million calculations.
-
+\\
 Save energy and increase network lifetime
 
 \subsection{Trade offs}
 
 Accuracy 
-
+\\
 Making robust estimations
-
+\\
 single outlier reading can damage MAX/MIN aggregates
 
 \subsection{Algorithms}
