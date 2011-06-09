@@ -2,3 +2,81 @@
 \emph{Q4: What are the optimization goals of WSN? What are the basic design
 principles in WSN? Give one or two examples which can reflect the design
 principles.}
+
+\section{Optimization goals}
+
+\subsection{Quality of Service}
+Different from traditional wireless networks
+
+\begin{description}
+	\item Event detection/reporting probability
+	\item Event classification error
+	\item Event detection delay
+	\item Probability of missing a periodic report
+	\item Approximation accuracy
+	\item Tracking accuracy
+\end{description}
+
+
+\subsection{Energy Efficiency}
+\begin{description}
+	\item Energy per correctly received bit
+	\item Energy per reported (unique) event
+	\item Delay/energy tradeoffs
+	\item Network lifetime
+\end{description}
+
+\subsection{Scalability}
+The ability to maintain performance characteristics irrespective of the size of
+the network
+
+Consider actual application needs before looking for solutions!
+
+\subsection{Robustness}
+\begin{description}
+	\item Failure of some nodes
+	\item Environment changes
+	\item Radio links change
+\end{description}
+
+
+\section{Design Principles}
+
+\subsection{Distributed Organization}
+Centralized approach hinders robustness and scalability
+\\
+Limited centralized -> Elect coordination
+\subsection{In-Network processing}
+Manipulate or process the data in the network
+\\
+Aggregation functions: minimum, maximum, average, sum..
+\\
+Take decisions
+\begin{description}
+	\item where to aggregate
+	\item long to wait
+\end{description}
+
+\subsection{Adaptive fidelity and accuracy}
+
+\begin{itemize}
+	\item Event detection
+		\begin{itemize}
+			\item rarely send short ``all is well''
+		\end{itemize}
+	\item Temperature monitoring
+\end{itemize}
+
+\subsection{Data-centricity}
+Redundantly deployed sensor networks
+\\
+Focus on data directly instead of senders and transmitters.
+
+\subsection{Exploit}
+\subsubsection{Exploit location information}
+\subsubsection{Exploit activity patterns}
+\subsubsection{Exploit heterogeneity}
+
+Deploy different types of nodes
+\\
+Asymmetric assignment of task
