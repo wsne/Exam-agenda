@@ -3,16 +3,56 @@
 energy consumption be optimized by operation? Give examples of ways to extend
 the life-time of a (primary) battery based node.}
 
-\section{Beskrielse af power og energi forbrug}
+\section{Power $\slash$ energy comsumption}
 
-\section{Energi optimering}
-Brug af ``Dynamic voltage scaling''
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{img/moteAnatomy.png}
+  \caption{Architecture.}
+\end{figure}
 
-Undlad at skrive til FLASH memory.
-Mica node:
-read: 1.111 nAh
-write: 83.333 nAh
+\begin{description}
+\item[Controller] Cheap.
+\item[Radio] Expensive.
+\end{description}
 
-At sende 1kB 100 m bruger samme energi som at lave tre millioner udregninger.
+\subsection{States of awareness}
 
-\section{Eksempler af måder til at forlænge batteri levetid}
+\begin{description}
+\item Controller.
+\item Radio.
+\item Can react on external stimuli.
+\end{description}
+
+\section{Optimizations}
+\begin{itemize}
+\item Data aggregation.
+\item Compute instead of transmit.
+\end{itemize}
+Avoid:
+\begin{itemize}
+\item Idle listening
+\item Over-hearing.
+\item Collisions (SMAC).
+\end{itemize}
+\begin{figure}[H]
+  \centering
+    \includegraphics[scale=0.5]{img/EnergySources-DutyCycling.png}
+    \caption{Duty cycling.}
+\end{figure}
+
+
+\section{Extending battery life}
+
+\begin{itemize}
+\item SMAC.
+\item Schedule.
+\item B-PHASES. Synch. Timeslots.
+\item RTS.
+\item CTS.
+\end{itemize}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../master"
+%%% End: 
