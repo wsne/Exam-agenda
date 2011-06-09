@@ -51,8 +51,8 @@ When using CSMA empty buffer indicates that congestion is mitigated.
 
 \begin{description}
 	\item Do local congestion detection at each node with low cost
-	\item Congestion is detected -> the node broadcasts suppression message to
-		upstream neighbors
+	\item Congestion is detected $\rightarrow$ the node broadcasts suppression
+		message to upstream neighbors
 	\item Make local adjustments to prevent propagating the congestion
 		downsteam
 \end{description}
@@ -60,6 +60,7 @@ When using CSMA empty buffer indicates that congestion is mitigated.
 Receiving backpressure signals:
 \begin{description}
 	\item Reduce sending rate or drop packets
+	\item Choose which packets to drop
 	\item Decide whether or not to propagate the backpressure signal
 \end{description}
 
@@ -78,7 +79,7 @@ closed-loop control is triggered (i.e. source triggers sink regulation)
 		send ACKs to regulate sources associated with a particular event. (e.g.
 		1 ACK per 100 data packets)
 	\item If the source recive ACK, continue at $r$
-	\item If congestion -> ACK is lost and source lowers $r$
+	\item If congestion $\rightarrow$ ACK is lost and source lowers $r$
 \end{description}
 
 
